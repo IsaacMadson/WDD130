@@ -1,0 +1,36 @@
+body {
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1 {
+    color: #fff;
+    
+}
+main p {
+    color: #fff;
+    text-align: center;
+}
+img {
+    width: 40%;
+    block-size: 0% auto;
+    text-align: center;
+}
+ol {
+    display: inline-block;
+    text-align: left; /* Ensures numbers and text are aligned */
+    padding: 0;
+    font-weight: bold;
+}
+footer {
+
+}
+.top section {
+    font-size: 20px;
+}
+.font-small {
+    font-size: 0.75rem;
+}
