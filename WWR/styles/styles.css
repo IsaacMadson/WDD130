@@ -241,7 +241,36 @@ footer .social img {
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
+textarea {
 
+    resize: none;
+}
+#feedback {
+
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+form {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFEF9F; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+
+}
+
+#hero2 {
+    z-index: 0;
+    position: ralative;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

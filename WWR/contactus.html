@@ -1,0 +1,83 @@
+<body>
+    <div id="content">
+    <header>
+        <link rel="stylesheet" href="styles/styles.css">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rivers.html">Rivers</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+    </header>
+   
+
+    <main>
+        <div id="feedback"></div>
+        <div id="hero2">
+            <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+                </div>
+                <section id="hero-msg">
+                    <h1 class="home-title">Have An Adventure</h1>
+                    <h4>Make Memories with Dry Oar </h4>
+                </section>
+            </div>
+        <form action="#" method="post">
+            
+            <p>
+            <label for="name">Name</label><br />
+            <input type="text" id ="name"name="user_name">
+            </p>
+            <p>
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="user_email">
+            </p>
+            <p>
+            <label for="message">Message</label><br />
+            <textarea id="message" name="user_message" rows="5" cols="60"></textarea>
+            </p>
+            <button type="submit">Submit</button>
+            
+        </form>
+
+    </main>
+        <footer>
+            <p>Dry Oar &copy; 2025 - Isaac Madson</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    </body>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>   
